@@ -14,7 +14,7 @@
   - Front End Mentor Profile : [https://www.frontendmentor.io/profile/paulovictor1997](https://www.frontendmentor.io/profile/paulovictor1997) 
 
 ## Preview 
-   ![images/preview.jpg](images/preview.jpg)
+   ![assets/images/preview.jpg](images/preview.jpg)
   
 
  
