@@ -10,21 +10,21 @@
     <script src="https://kit.fontawesome.com/4f299abd4d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <nav class="navbar">
         <div class="logo">
             <img src="assets/images/logo-bookmark.svg" alt="logo">
         </div>
-        <div class="menu">
+        <ul class="nav-links-desktop">
             <a href="#">Features</a>
             <a href="#">Pricing</a>
             <a href="#">Contact</a>
             <button class="login">Login</button>
-        </div>
-        <img src="assets/images/icon-hamburger.svg" alt="icon-hamburger" class="open" onclick="openMenu()">
-        <img src="assets/images/icon-close.svg" alt="icon-close" class="close"onclick="closeMenu()">
-    </header>
-    <div class="menu-mobile">
-        <div class="links-menu">
+        </ul>
+        <div class="mobile-menu" id="mobileMenu">
+          <button class="close" id="closeButton">
+            <img src="assets/images/icon-close.svg" alt="icon-close">
+          </button>
+          <ul class="nav-links-mobile">
             <a href="#">Features</a>
             <div class="line"></div>
             <a href="#">Pricing</a>
@@ -41,9 +41,13 @@
                     <img src="assets/images/icon-twitter.svg" alt="icon-twitter">
                 </a>
             </div>
+          </ul>
         </div>
-    </div>
-
+        <button class="hamburger" id="hamburgerButton">
+            <img src="assets/images/icon-hamburger.svg" alt="icon-hamburger">
+        </button>
+      </nav>
+    
     <main class="area-1">
         <div class="content-1">
             <h1 class="title-1 color-title">A Simple Bookmark Manager</h1>

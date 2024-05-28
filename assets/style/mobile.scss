@@ -1,16 +1,11 @@
 @media screen and (max-width:920px) {
-    header{
-        width: 100%;
-        .open{
-            display: block;
-        }
-
-        .menu{
-            display: none;
-        }
+    .nav-links-desktop {
+        display: none;
+      }
     
-    
-    }
+      .hamburger {
+        display: block;
+      }
    
     .area-1{
         width: 100%;
@@ -159,16 +154,16 @@
             padding: 10px;
             
             .error{
-                margin-top: 8%;
-                margin-left: 6%;
+                margin-top: 6%;
+                margin-left:6.5%;
             }
             .email-box{
                 display: flex;
                 flex-direction: column;
                 
                 .erroIcon{
-                    margin-left: 40%;
-                    margin-top: 0.9%;
+                    margin-left: 30%;
+                    margin-top: 0.5%;
                 }
                 
                 .button-form{

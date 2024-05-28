@@ -1,4 +1,5 @@
 /* Menu*/
+/*
 function openMenu(){
     document.querySelector('.open').style.display = 'none';
     document.querySelector('.close').style.display = 'block';
@@ -10,6 +11,18 @@ function closeMenu(){
     document.querySelector('.close').style.display = 'none';
     document.querySelector('.menu-mobile').style.display = 'none';
 }
+*/
+const hamburgerButton = document.querySelector("#hamburgerButton");
+const closeButton = document.querySelector("#closeButton");
+const mobileMenu = document.querySelector("#mobileMenu");
+
+hamburgerButton.addEventListener("click", ()=> {
+  mobileMenu.classList.add("flex");
+});
+
+closeButton.addEventListener("click", ()=> {
+  mobileMenu.classList.remove("flex");
+});
 
 /* Bookmark areas*/
 const simple = document.querySelector('.simple');

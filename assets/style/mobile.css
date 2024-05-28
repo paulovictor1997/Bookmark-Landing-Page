@@ -1,12 +1,9 @@
 @media screen and (max-width: 920px) {
-  header {
-    width: 100%;
-  }
-  header .open {
-    display: block;
-  }
-  header .menu {
+  .nav-links-desktop {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
   .area-1 {
     width: 100%;
@@ -135,16 +132,16 @@
     padding: 10px;
   }
   .area-3 form .error {
-    margin-top: 8%;
-    margin-left: 6%;
+    margin-top: 6%;
+    margin-left: 6.5%;
   }
   .area-3 form .email-box {
     display: flex;
     flex-direction: column;
   }
   .area-3 form .email-box .erroIcon {
-    margin-left: 40%;
-    margin-top: 0.9%;
+    margin-left: 30%;
+    margin-top: 0.5%;
   }
   .area-3 form .email-box .button-form {
     margin-top: 10%;

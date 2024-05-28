@@ -14,79 +14,122 @@
   color: hsl(229, 8%, 60%);
 }
 
-header {
-  width: 100%;
-  padding: 15px;
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 50px;
 }
-header .open, header .close {
-  display: none;
-  cursor: pointer;
+
+.nav-links-desktop {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
 }
-header .menu {
-  padding: 5px;
-}
-header .menu a {
-  text-decoration: none;
-  padding: 5px;
-  color: hsl(229, 8%, 60%);
-}
-header .menu a:hover {
-  transition: 0.5s all;
-  color: hsl(0, 94%, 66%);
-}
-header .menu .login {
+.nav-links-desktop .login {
   padding: 10px;
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 94%, 66%);
   cursor: pointer;
 }
-header .menu .login:hover {
+.nav-links-desktop .login:hover {
   transition: 0.5s all;
   color: hsl(0, 94%, 66%);
   background-color: hsl(0, 0%, 100%);
   border-color: hsl(0, 94%, 66%);
 }
 
-.menu-mobile {
-  width: 100%;
-  padding: 10px;
-  background-color: hsl(229, 31%, 21%);
+.nav-links-desktop li {
+  padding: 0 15px;
+}
+
+.nav-links-desktop a,
+.nav-links-mobile a {
+  color: hsl(229, 8%, 60%);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.nav-links-desktop a:hover,
+.nav-links-mobile a:hover {
+  color: hsl(0, 94%, 66%);
+}
+
+.mobile-menu {
   display: none;
-  position: absolute;
-}
-.menu-mobile .line {
-  border: 1px solid rgba(255, 255, 255, 0.473);
+  position: fixed;
+  top: 0;
+  right: 0;
   width: 100%;
-}
-.menu-mobile .links-menu {
-  padding: 10px;
-  display: flex;
+  height: 100%;
+  background-color: hsl(229, 31%, 21%);
   flex-direction: column;
   align-items: center;
+  font-size: 1.8rem;
+  z-index: 5;
 }
-.menu-mobile .links-menu .icon-media {
-  margin-top: 10%;
-}
-.menu-mobile .links-menu .icon-media a {
-  gap: 5px;
-}
-.menu-mobile .links-menu .login-menu {
-  margin-top: 3%;
-  width: 200px;
-  padding: 5px;
+.mobile-menu .login-menu {
+  margin-top: 5%;
+  padding: 10px;
   color: hsl(0, 0%, 100%);
   background-color: transparent;
   border-color: white;
   cursor: pointer;
+  width: 200px;
+  margin: auto;
+  opacity: 0.5;
+  transition: 0.5s all;
 }
-.menu-mobile .links-menu a {
-  padding: 10px;
-  text-decoration: none;
-  color: hsl(0, 0%, 100%);
+.mobile-menu .login-menu:hover {
+  opacity: 1;
+}
+.mobile-menu .icon-media {
+  gap: 5px;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.2rem;
+  width: 80%;
+  list-style: none;
+  padding: 0;
+}
+.nav-links-mobile .line {
+  border: 1px solid rgba(255, 255, 255, 0.473);
+  width: 100%;
+}
+
+.nav-links-mobile li {
+  border-bottom: 1px solid #787272;
+  padding-bottom: 1.2rem;
+}
+
+.hamburger,
+.close {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  margin-top: 20px;
+  margin-right: 20px;
+  display: block;
+  align-self: end;
+}
+
+.flex {
+  display: flex;
 }
 
 .area-1 {
@@ -542,11 +585,12 @@ header .menu .login:hover {
 }
 .area-3 form .error {
   width: 250px;
+  margin-top: 2%;
   border-radius: 0px 0px 5px 5px;
   text-align: left;
   background-color: hsl(0, 94%, 66%);
   color: hsl(0, 0%, 100%);
-  margin-right: 6%;
+  margin-right: 7%;
   padding: 3px;
   margin-top: 3%;
   position: absolute;
